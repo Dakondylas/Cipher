@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" defer></script>
+</head>
+<body style="text-align: center; margin-top: 100px; background-color: darkgray;">
+    <form id="form" style="background-color: bisque; margin-left: 40%; margin-right: 40%;">
+        <br>
+        <label for="input">Enter what you want to be De-Ciphered:</label>
+        <br>
+        <input type="text" id="input" required>
+        <br>
+        <br>
+        <label for="number">Select the number for the cipher or try every combination:</label>
+        <br>
+        <br>
+        <input type="number" id="number" min="1" max="25" required>
+        <label for="number" style="color: bisque;">____</label>
+        <input type="checkbox" id="runAll">
+        <label for="runAll"> Try all</label>
+        <label for="number" style="color: bisque;">____</label>
+        <input type="checkbox" id="right">
+        <label for="right">Cypher Right?</label>
+        <br>
+        <br>
+        <button id="deCipher">De-Cipher</button>
+        <br>
+        <br>
+    </form>
+    <br>
+    <div id="output" style=" display: none;">
+        <div style="background-color: white; margin-left: 40%; margin-right: 40%;">
+            <br>
+            <h3>Output:</h3>
+            <br>
+            <div id="actualOutput">
+            </div>
+            <br>
+        </div>
+    </div>
+</body>
+</html>
